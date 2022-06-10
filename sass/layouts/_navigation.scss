@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 3.2rem 4.2rem;
+  height: 17rem;
+
+  &_logo {
+    height: 15rem;
+    // filter: grayscale(1);
+  }
+  &_list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    column-gap: 3.2rem;
+    margin-right: 1.6rem;
+  }
+  &_items {
+    justify-self: center;
+  }
+
+  &_link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: $fontsize-medium;
+      font-weight: 700;
+      color: $color-white;
+      transition: color 0.5s;
+    }
+    &:hover,
+    &:active {
+      color: $color-red;
+    }
+  }
+}
+
+.navigation_link.navigation_link--book {
+  padding: 2rem 3.6rem;
+  border-radius: 100rem;
+  background-color: $color-red;
+  color: $color-white;
+}
