@@ -1,0 +1,27 @@
+.order {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  }
+  &__header {
+    text-align: center;
+  }
+
+  &__img {
+    width: 90%;
+    border-radius: 3px;
+  }
+  &__number {
+    font-size: 8.6rem;
+    font-weight: 700;
+    color: $color-grey-light;
+  }
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+}

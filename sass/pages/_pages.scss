@@ -44,7 +44,7 @@ section:not(:last-child) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  grid-gap: 6rem;
+  grid-gap: 6.4rem;
 }
 .section_feature {
   grid-column: full-slide/full-end;
@@ -60,9 +60,21 @@ section:not(:last-child) {
   // height: 80vh;
   max-width: 100vw;
   padding: 9rem 0;
-  transform: skewY(-7deg);
+  transform: skewY(-6deg);
 
   & > * {
-    transform: skewY(7deg);
+    transform: skewY(6deg);
   }
+}
+
+.section__order {
+  // padding: 9rem 0;
+  grid-column: center-start/center-end;
+}
+
+.section__review {
+  grid-column: full-slide/full-end;
+
+  // height: 50vh;
+  padding: 6rem 3.2rem 6rem 3rem;
 }
