@@ -13,14 +13,17 @@ section:not(:last-child) {
   position: relative;
   //prettier-ignore
   background-image: linear-gradient(to right ,rgb(52, 58, 64, .8),rgba(50, 52, 54, 0.7)),url(../../img/bat.jpg);
+  background-size: cover;
+  background-position: center;
   grid-column: full-slide/full-end;
+  // clip-path: polygon(0 0, 0 100%, 100% 90vh, 100% 0);
 }
 .booking__link {
   &:link,
   &:visited {
     font-size: 2rem;
     background-color: $color-red;
-    padding: 1.3rem 4.2rem;
+    padding: 1.2rem 3.6rem;
     border-radius: 100rem;
     color: $color-white;
     margin-top: $margin-small;
@@ -77,4 +80,16 @@ section:not(:last-child) {
 
   // height: 50vh;
   padding: 6rem 3.2rem 6rem 3rem;
+}
+
+.pallarax {
+  // transform: skewY(-7deg);
+  grid-column: full-slide/full-end;
+  background-image: url(../../img/megas.jpg);
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 9rem 0;
+  z-index: -100;
 }
